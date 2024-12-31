@@ -17,4 +17,4 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 
 You are free to use, modify, and distribute the code, including for commercial purposes, as long as you give appropriate credit to this repository. Please include a clear attribution in your project where users can easily find it.
 
-For full details, see the [LICENSE](./LICENSE).
+For full details, see the [LICENSE](./LICENSE.md).
