@@ -12,22 +12,22 @@ dict_size=10000 # bytes
 check( 2**(cell_size*8) >= dict_size,
       "dict size too big to be addressed")
 
-
+cell_mask = (1<<(cell_size*8))-1
 # I need this to simulate limited 
 # integer size
 def n2b(val):
-    val = (1 << (cell_size * 8)) - 1
+    val &= cell_mask
     return val.to_bytes(cell_size, "little")
 def b2n(val):
-    return val.from_bytes(cell_size, "little")
+    return int.from_bytes(val, "little")
     
 class Dict:
     def __init__(self):
         self.d = bytearray(dict_size)
     def __getitem__(self,index):
-        return b2n(self.d[index])
+        return b2n(self.d[index:index+cell_size])
     def __setitem__(self,index,value):
-        self.d[index]=n2b(value)
+        self.d[index:index+cell_size]=n2b(value)
 
 d=Dict()
 
@@ -69,7 +69,7 @@ dsp=tos
 
 def dspush(n):
     global dsp
-    dsp-=
+    dsp-=1
     d[dsp]=n
 def dspop():
     global dsp
