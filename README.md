@@ -1,15 +1,17 @@
 # Unified Forth (u4th)
 
+## NOT WORKING YET
+
 The aim of this Forth is running [Standard](https://forth-standard.org/) Forth code inside all programming languages' projects.
 
 Aim in points:
-[ ] Pass all [Standard Forth tests](https://forth-standard.org/standard/testsuite)
-[ ] Each implementation execute functions of the parent language
-[ ] All of Standard Forth be written in Forth itself except the absolute necessary words of [core](https://forth-standard.org/standard/core)
-[ ]Each language have a folder with two folders inside.
+- [ ] Pass all [Standard Forth tests](https://forth-standard.org/standard/testsuite)
+- [ ] Each implementation execute functions of the parent language
+- [ ] All of Standard Forth be written in Forth itself except the absolute necessary words of [core](https://forth-standard.org/standard/core)
+- [ ]Each language have a folder with two folders inside.
     * normal: where the code is easiest to read
     * fast  : where the code is fastest
-[ ] Contain a two step tree-shaking capability
+- [ ] Contain a two step tree-shaking capability
     * run your code with a certain flag. the program prints the unused words (your words and system words)
     * send these words using another flag to produce a dictionary that excludes the unused words.
 
