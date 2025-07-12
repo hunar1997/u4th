@@ -8,7 +8,7 @@ Aim in points:
 - [ ] Pass all [Standard Forth tests](https://forth-standard.org/standard/testsuite)
 - [ ] Each implementation execute functions of the parent language
 - [ ] All of Standard Forth be written in Forth itself except the absolute necessary words of [core](https://forth-standard.org/standard/core)
-- [ ]Each language have a folder with two folders inside.
+- [ ] Each language have a folder with two folders inside.
     * normal: where the code is easiest to read
     * fast  : where the code is fastest
 - [ ] Contain a two step tree-shaking capability
